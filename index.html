@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Styling for MAP -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+     crossorigin=""/>
+     <!-- JS for map -->
+     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+     crossorigin=""></script>
+    <title>IP Address Tracker</title>
+    <link rel="icon" type="image/x-icon" href="ip-address-tracker-master/images/favicon-32x32.png">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h2>IP Address Tracker</h2>
+            <div class="search-box">
+                <form id='form'>
+                    <input type="text" placeholder="Search for any IP Address or Domain" id="search-input">
+                    <button type="submit" class="submit-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
+                    </button>
+                </form>
+            </div>
+        </header>
+        <!-- Floating div with data/info -->
+        <div class="panel">
+            <div class="info-field">
+                <p>IP ADDRESS</p>
+                <h3 id='ip-address'></h3>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="info-field">
+                <p>LOCATION</p>
+                <h3 id='location'></h3>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="info-field">
+                <p>TIMEZONE</p>
+                <h3 id='timezone'></h3>
+            </div>
+
+            <div class="divider"></div>
+            
+            <div class="info-field">
+                <p>ISP</p>
+                <h3 id='isp'></h3>
+            </div>
+        </div>
+        <!-- MAP -->
+        <div id="map"></div>
+
+    </div>
+    <script src='app.js'></script>
+</body>
+</html>
