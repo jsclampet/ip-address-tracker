@@ -40,6 +40,7 @@ header h2 {
 }
 .search-box form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-left: 25px;
@@ -98,7 +99,7 @@ header h2 {
 }
 #map {
     z-index: 10;
-    height: px;
+    height: 600px;
 }
 
 
@@ -121,7 +122,6 @@ header h2 {
     .panel {
         width: 900px;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
