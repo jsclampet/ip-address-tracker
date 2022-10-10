@@ -6,8 +6,13 @@
     box-sizing: border-box;
     font-family: 'Rubik';
 }
+html, body {
+    height: 100%;
+    width: 100vw;
+}
 .main-container {
-    position: relative;
+    width: 100%;
+    margin: auto;
 }
 header {
     background-image: url(ip-address-tracker-master/images/pattern-bg.png);
@@ -17,6 +22,7 @@ header {
     padding: 45px 23px 0 23px;
     text-align: center;
     height: 300px;
+    width: 100%;
 }
 header h2 {
     color: white;
@@ -34,6 +40,7 @@ header h2 {
 }
 .search-box form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-left: 25px;
@@ -90,9 +97,9 @@ header h2 {
     font-weight: 500;
     color: hsl(0, 0%, 17%);
 }
-#map { 
-    height: 555px; 
+#map {
     z-index: 10;
+    height: 600px;
 }
 
 
@@ -115,6 +122,7 @@ header h2 {
     .panel {
         width: 900px;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
